@@ -10,7 +10,7 @@
         <h:outputStylesheet name="/css/cssLayout.css"/>
         <title>Facelet Title</title>
     </h:head>
-    <h:body id="PlanificacionEstrategica">
+    <h:body>
         <div id="top" >
             <ui:insert name="top">Top</ui:insert>
             <!-- Este si funcionad 
@@ -30,16 +30,16 @@
                     <p:growl id="messages"/>
 
                     <p:menubar>
-                        <p:submenu label="Integrantes" icon="pi pi-file">
+                        <p:submenu label="Integrantes">
                             <p:menuitem value="Diego Bahamonde" url="#" />
                             <p:menuitem value="Bryan Imbaquingo" url="#" />
                             <p:menuitem value="Mario Suin" url="#" />
                             <p:separator />
                             <p:menuitem value="Mas Sobre los Integrantes" url="Integrantes.xhtml" />
                         </p:submenu>     
-                        <p:menuitem value="Quit" url="index.xhtml" icon="pi pi-times" />
+                        <p:menuitem value="Quit" url="index.xhtml" />
 
-                        <p:submenu label="Ingresar" icon="pi pi-file">
+                        <p:submenu label="Ingresar">
                             <p:menuitem value="Login" url="Login.xhtml" />
                             <p:menuitem value="Registrarte" url="#" />                         
                         </p:submenu> 

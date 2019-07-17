@@ -10,8 +10,8 @@
     </head>
     <body>
         <div class="login-box">
-           
-           <img src="img/avatar.png" class="avatar">
+
+            <img src="img/avatar.png" class="avatar">
             <h1>Login Here</h1>
             <form method="post" action ="autentificacion">
                 <table align="center"><tr><td><label id="subtitulo1">USUARIO</label></td><td><input type="text" placeholder="&#128272; Enter User"  id="entrada" name="txtusu" /></td></tr>

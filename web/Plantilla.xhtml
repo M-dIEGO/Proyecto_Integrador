@@ -14,7 +14,7 @@
     </h:head>
 
     <h:body>
-<!-- TOP-->
+        <!-- TOP-->
         <div id="top" >
             <ui:insert name="top"></ui:insert>
             <!-- Este si funcionad 
@@ -50,32 +50,34 @@
             </div>
         </div> <!-- Cierre Encabezado-->
 
-<!-- left-->
+        <!-- left-->
         <div>
             <div id="left">
                 <ui:insert name="left"></ui:insert>
+                <br/><br/> <br/><br/><br/>
                 <div>
                     <h:form>  
                         <p:growl id="messages" showDetail="true" />
-
                         <p:tieredMenu style="width:200px">
                             <p:submenu label="Archivos Planos" >
-                                <p:menuitem value="ARCHIVOS"/>
-                               
+                                <p:menuitem value="Archivos"/>                               
                             </p:submenu>
                             <p:submenu label="Requerimientos">
                                 <p:menuitem value="Casos de Uso" url="Casos_Uso.xhtml"/>
-                            </p:submenu>  
-                            
-                            
-                            <p:submenu label="Planificacion Estratégica" icon="pi pi-clone">
+                            </p:submenu> 
+                            <p:submenu label="Planificacion Estratégica">
                                 <p:menuitem value="Mision/Vision/Valores" url="PlanificacionEstrategica.xhtml"/>
                             </p:submenu> 
-                           
+
                         </p:tieredMenu>
 
-                        
+                       <br/> <br/>
                     </h:form>
+                    <div>
+                    <p:imageCompare leftImage="/img/bandera_ecu.jpg"
+                                    rightImage="img/piesitos.jpeg"                
+                                    width="150" height="150"/>
+                </div> 
                 </div>
 
             </div><!--Cierre panel left-->
@@ -84,20 +86,34 @@
             <!--Imagen doble-->
             <div id="content" class="left_content" align="center">
                 <ui:insert name="content">Content</ui:insert>
-                <div>
-                    <p:imageCompare leftImage="/img/bandera_ecu.jpg"
-                                    rightImage="img/piesitos.jpeg"                
-                                    width="350" height="335"/>
-                </div>  
-                <br></br><br></br><br></br><br></br><br></br>
+                <!--Imagen con Movimiento
+                <div class="container-portada">
+                    <div class="capa-gradient"></div>
+                    <div class="container-details">
+                        <div class="details">
+                            <h1>Diego Ismael</h1>
+                            <p> coksdmhwenyrcutgfcwqnkasnmuixhbnyredhtuh
+                            crmuithurehfw
+                            cernghfy</p>
+                            
+                        </div>
+                    </div>
+                </div>-->
                 
+                
+                
+                
+                
+                <p>El Instituto Nacional de Estadística y Censos (INEC) es el órgano rector de la estadística nacional y 
+                    el encargado de generar las estadísticas oficiales del Ecuador para la toma de decisiones en la política
+                    pública.]</p>
+                 
+                <br></br><br></br><br></br><br></br><br></br>
+
             </div><!-- cierro contenido-->
 
         </div>
-        <div id="bottom">
-            <ui:insert name="bottom">ismael</ui:insert>
-        </div>
-
+        
     </h:body>
 
 </html>
