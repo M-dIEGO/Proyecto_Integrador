@@ -38,16 +38,11 @@ public class menu extends HttpServlet {
          }else{
          try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Menu</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>ingreso exitoso bienvenido" +usu.getNombre()+"</h1>");
-            out.println("<a href='cerrarSession'>cerrar session</a>");
-            out.println("</body>");
-            out.println("</html>");
+            
+             request.setAttribute("usu",usu.getNombre());
+          request.getRequestDispatcher("menu.jsp").forward(request, response);
+            
+           
         }
          }
         
